@@ -14,15 +14,15 @@ from random import randint
 
 # Begin your solution here...
 print("Your fortune cookie says...")
-guess=(randint(1,4))
-a=guess
+guess =(randint(1, 4))
+a = guess
 if a == 1:
     print("You will experience something fun soon.")
 else: 
-    if guess ==2:
+    if guess == 2:
         print("Something surprising will happen to you.")
-    if guess ==3:
+    if guess == 3:
         print("You will have some fun adventures.")
-    if guess ==4:
+    if guess == 4:
         print("Your future is bright.")
 print("Now, go spread positive vibes!")

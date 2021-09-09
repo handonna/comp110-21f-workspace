@@ -7,7 +7,7 @@ __author__ = "730400224"
 beat = input("What beat do you want to repeat? ")
 maximum = int(input("How many times do you want to repeat it? "))
 count = maximum
-while count >0:
+while count > 0:
     print(beat)
     count -= 1
 else: 
