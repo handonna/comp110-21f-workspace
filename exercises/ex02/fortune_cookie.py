@@ -14,7 +14,7 @@ from random import randint
 
 # Begin your solution here...
 print("Your fortune cookie says...")
-guess =(randint(1, 4))
+guess = (randint(1, 4))
 a = guess
 if a == 1:
     print("You will experience something fun soon.")
