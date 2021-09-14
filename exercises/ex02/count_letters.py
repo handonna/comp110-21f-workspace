@@ -11,7 +11,7 @@ lettercount = 0
 while (i < len(word)):
     if (word[i] == letter):
         lettercount = lettercount + 1
-    i = i+1
+    i = i + 1
 else:
     if len(word) == 0:
         print("0")

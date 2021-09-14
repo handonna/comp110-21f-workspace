@@ -8,7 +8,7 @@ beat = str(input("What beat do you want to repeat? "))
 maximum = (int(input("How many times do you want to repeat it? ")))
 count = maximum
 string = str(beat)
-add = maximum-1
+add = maximum - 1
 while count > 0:
     repeated = (((string) + " ") * (add) + string)
     print(repeated)
