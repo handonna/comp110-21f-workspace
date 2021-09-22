@@ -1,13 +1,13 @@
 """Finding duplicate letters in a word."""
 
-__author__ = "123456789"
+__author__ = "730400224"
 
 i: str = input("Enter an word: ")
 j: int = 0
 is_true: int = 0
 
 while (j < len(i)):
-    k: int = 1
+    k: int = j + 1
     while (k < len(i)):
         if (i[j] == i[k]):
             is_true += 1
