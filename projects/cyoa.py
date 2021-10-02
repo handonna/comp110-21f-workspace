@@ -1,33 +1,41 @@
-"""Create Your Own Adventure"""
+"""Create Your Own Adventure!"""
 
 __author__ = "730400224"
 
 from random import randint
 
-points: int=0
-player: str=0
+points: int = 0
+player: str = "name"
 emoji: str = ("\U0001f600")
+choice_1: str = "first choice"
+
 
 def main() -> None:
+    """Main function for Game."""
     greet()
     global choice_1
-    choice_1= input(f"Hello {player}, you are home alone sitting in your bedroom when you hear a weird crashing noise. Do you wish to: 1. Exit your bedroom, 2. Call someone or type 'exit' to end the game? ")
+    choice_1 = input(f"Hello {player}, you are home alone sitting in your bedroom when you hear a weird crashing noise. Do you wish to: 1. Exit your bedroom, 2. Call someone or type 'exit' to end the game? ")
     path_1()
 
+
 def greet() -> None:
+    """Greeting Function."""
     print(f"Welcome to the House Game {emoji}! In this game, you will be placed in a house where you hear an unknown sound. The objective is to make wise choices in order to figure out what is making the noise.") 
     global player
     player = input("Enter Player Name: ")
+    return None
 
-def path_1():
+
+def path_1() -> None:
+    """Choices for Path 1."""
     if choice_1 == "1":
         print(f"Brave choice {player}! You leave your bedroom and make your way downstairs, but you hear someone moving!") 
         global points
         points = points + 1
         print(f"Point Count: {points}")
-        choice_2= input(f"{player}, Do you (1) walk around and find the person or (2)stay quiet?")
+        choice_2 = input(f"{player}, Do you (1) walk around and find the person or (2)stay quiet?")
         if choice_2 == "1":
-            choice_3 = input(f"You decided to walk around when you hear a weird noise. Do you call out asking who it is? Yes or No")
+            choice_3 = input("You decided to walk around when you hear a weird noise. Do you call out asking who it is? Yes or No")
             points = points + 1
             print(f"Point Count: {points}")
             if choice_3 == "Yes":
@@ -57,11 +65,11 @@ def path_1():
 
     else:
         if choice_1 == "2":
-            i = (randint(1,5))
-            print(f"You pick up your phone, but quickly notice its at {i}% and is about to die.")
+            i = (randint(1, 5))
+            print(f"You pick up your phone, but quickly notice its at {i} % and is about to die.")
             points = points + 1
             print(f"Point Count: {points}")
-            choice_2= input(f"Do you (1) go get the charger from the kitchen or (2) let it die?")
+            choice_2 = input("Do you (1) go get the charger from the kitchen or (2) let it die?")
             if choice_2 == "1":
                 choice_3 = input("Holding your pepper spray in hand, you walk out to get the charger when you hear a familiar voice say your name. Do you spray them, Yes or No?")
                 points = points + 1
@@ -88,15 +96,11 @@ def path_1():
                     print("You leave the house to see your dog through the window and realize he was the one making noise.")
                     points = points + 1
                     print(f"Point Count: {points}")
-                    print("Game Completed")
-
-
-
-       
+                    print("Game Completed")    
     if choice_1 == "exit":
         print("Game over.")
-        print(f"Point Count: {points}")
+        print(f"Point Count: {points} ")
             
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
