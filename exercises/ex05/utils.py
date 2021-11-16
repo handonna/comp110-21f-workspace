@@ -17,17 +17,19 @@ def only_evens(list1: list[int]) -> list:
 
 
 def sub(list1: list[int], start: int, stop: int) -> list:
-    """Given a list of ints, start index, and end index, generate list between indexes. """
+    """Given a list of ints, start index, and end index, generate list between indexes."""
     list2: list[int] = []
     i: int = 0
     if i == len(list1): 
         return list2
     elif start > len(list1): 
         return list2
+    elif start == len(list1):
+        return list2
     elif stop <= i:
         return list2
-    else: 
-        while  start < stop:
+    else:
+        while start < stop:
             start < len(list1)
             list2.append(list1[start])
             start += 1

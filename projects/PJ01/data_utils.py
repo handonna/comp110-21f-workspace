@@ -90,3 +90,8 @@ def count(values: list[str]) -> dict[str, int]:
             frequency[i] = 1
     return frequency
 
+
+def add(total1: int, total2: int) -> int:
+    """Return addition of two integers."""
+    total = total1 + total2
+    return total
