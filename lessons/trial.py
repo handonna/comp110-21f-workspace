@@ -1,5 +1,5 @@
-points: dict[str, int] = {'Kris': 0,'Kaki': 10}
-print(points)
+class Foo:
+    bar: int = 0
 
-points['Kaki'] +=100
-print(points)
+f: Foo = Foo()
+f.bar = 10
